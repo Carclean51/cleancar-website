@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CleanCar Berlin – Mobiler Autoinnen-Service</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Hero -->
+  <header class="h-screen flex flex-col justify-center items-center text-center px-4">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6 fade-in">Mobiler Autoinnen-Service in Berlin</h1>
+    <p class="text-lg md:text-xl mb-8 fade-in">Wir kommen zu Ihnen nach Hause – Sauberkeit, Zeitersparnis, Qualität.</p>
+    
+    <!-- Hauptbutton -->
+    <a href="#buchung" class="bg-black text-white px-6 py-3 rounded-full text-lg hover:bg-gray-800 transition fade-in mb-4">
+      Termin buchen
+    </a>
+    
+    <!-- Kontakt-Buttons -->
+    <div class="flex space-x-3 fade-in">
+      <a href="tel:+491701234567" class="bg-gray-200 text-black px-4 py-2 rounded-full text-sm hover:bg-gray-300 transition">Anrufen</a>
+      <a href="https://wa.me/491701234567" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-full text-sm hover:bg-green-600 transition">WhatsApp</a>
+    </div>
+
+    <div class="mt-12 w-64 h-64">
+      <lottie-player 
+        src="https://assets10.lottiefiles.com/packages/lf20_tutvdkg0.json"  
+        background="transparent"  
+        speed="1"  
+        loop  
+        autoplay>
+      </lottie-player>
+    </div>
+  </header>
+
+  <!-- Leistungen -->
+  <section id="leistungen" class="py-20 px-6 md:px-20 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-12 fade-in">Unsere Pakete</h2>
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+      <!-- Basic Paket -->
+      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition fade-in">
+        <h3 class="text-xl font-semibold mb-4">🧹 Basic – 69 €</h3>
+        <ul class="text-left space-y-2">
+          <li>✔️ Staubsaugen: Sitze, Teppiche, Kofferraum</li>
+          <li>✔️ Wischen: Armaturen, Mittelkonsole, Türinnenseiten</li>
+        </ul>
+      </div>
+
+      <!-- Plus Paket -->
+      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition fade-in">
+        <h3 class="text-xl font-semibold mb-4">✨ Plus – 109 €</h3>
+        <ul class="text-left space-y-2">
+          <li>✔️ Alles aus Basic</li>
+          <li>✔️ Tiefenreinigung Polster & Teppiche</li>
+          <li>✔️ Lederpflege (falls vorhanden)</li>
+          <li>✔️ Reinigung: Ablagen, Türfächer, Lüftungsschlitze</li>
+          <li>✔️ Leichte Geruchsbeseitigung</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Warum wir -->
+  <section class="py-20 px-6 md:px-20">
+    <h2 class="text-3xl font-bold text-center mb-12 fade-in">Warum CleanCar?</h2>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div class="fade-in">
+        <div class="text-5xl mb-4">⏱️</div>
+        <h3 class="font-semibold mb-2">Zeit sparen</h3>
+        <p>Wir kommen zu Ihnen – kein Warten in der Waschanlage.</p>
+      </div>
+      <div class="fade-in">
+        <div class="text-5xl mb-4">🚗</div>
+        <h3 class="font-semibold mb-2">Mobil</h3>
+        <p>Ob zuhause oder im Büro – wir reinigen vor Ort.</p>
+      </div>
+      <div class="fade-in">
+        <div class="text-5xl mb-4">✨</div>
+        <h3 class="font-semibold mb-2">Qualität</h3>
+        <p>Professionelle Geräte, nachhaltige Produkte, top Ergebnisse.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buchung -->
+  <section id="buchung" class="py-20 px-6 md:px-20 bg-gray-100">
+    <h2 class="text-3xl font-bold text-center mb-12 fade-in">Jetzt Termin buchen</h2>
+    <div class="max-w-3xl mx-auto fade-in">
+      <!-- Calendly inline widget -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/admin-ventcollect/neuer-termin" style="min-width:320px;height:700px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-black text-white text-center text-sm">
+    <p>
+      © 2025 CleanCar Berlin · 
+      <a href="/impressum.html" class="underline">Impressum</a> · 
+      <a href="/datenschutz.html" class="underline">Datenschutz</a> · 
+      <a href="/agb.html" class="underline">AGB</a> · 
+      <a href="/widerruf.html" class="underline">Widerruf</a>
+    </p>
+  </footer>
+
+  <script>
+    // Scroll Animations
+    const elements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+    elements.forEach(el => observer.observe(el));
+  </script>
+
+  <!-- Custom Cookie Banner -->
+  <style>
+    #cookie-banner {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #000;
+      color: #fff;
+      padding: 16px 24px;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      max-width: 90%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      z-index: 9999;
+    }
+    #cookie-banner a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    #cookie-banner button {
+      background: #fff;
+      color: #000;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 9999px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+    #cookie-banner button:hover {
+      background: #ddd;
+    }
+  </style>
+
+  <div id="cookie-banner">
+    <span>
+      Diese Website verwendet Cookies von Drittanbietern (z. B. Calendly), um Buchungen zu ermöglichen. 
+      Mehr Infos in unserer <a href="/datenschutz.html" target="_blank">Datenschutzerklärung</a>.
+    </span>
+    <button onclick="document.getElementById('cookie-banner').style.display='none'">
+      Verstanden
+    </button>
+  </div>
+
+</body>
+</html>
